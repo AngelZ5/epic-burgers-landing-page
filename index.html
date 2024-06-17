@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Burgers</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body class="font-Poppins">
+
+    <header class="fixed w-screen bg-red-600 text-white p-4 z-50" data-aos="fade-down">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Epic Burgers</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                    <li><a href="#menu" class="hover:text-yellow-300">Menu</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 flex items-center justify-start ml-40 text-center text-black">
+        <div>
+            <h2 class="text-4xl font-bold" data-aos="fade-right">O melhor hambúrguer gourmet</h2>
+            <p class="mt-4" data-aos="fade-right">Delicioso suculento e feito para você!</p>
+            <button class="mt-4 px-6 py-2 bg-yellow-500 text-white font-bold rounded hover:bg-yellow-600"
+                data-aos="fade-right">Pedir</button>
+        </div>
+        <img class="w-96 ml-52" data-aos="fade-left" src="./src/img/Hero Burguer.png" alt="">
+    </section>
+    <hr>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white" data-aos="fade-up">
+        <div class="container mx-auto text-left">
+            <h3 class="text-4xl font-bold mb-4">Sobre a Epic burgers</h3>
+            <p class="text-lg">Epic Burgers é um restaurante especializado em criar experiências gastronômicas únicas
+                com
+                hambúrgueres
+                gourmet. Cada hambúrguer é feito com ingredientes frescos e de alta qualidade, incluindo carnes
+                selecionadas, vegetais orgânicos e pães artesanais. O menu oferece uma variedade de opções, desde
+                clássicos suculentos até criações inovadoras com sabores exóticos e combinações inesperadas. Além dos
+                hambúrgueres, Epic Burgers também oferece acompanhamentos deliciosos, como batatas fritas trufadas e
+                milkshakes artesanais, tudo em um ambiente acolhedor e moderno que convida os clientes a desfrutar
+                de
+                uma refeição inesquecível.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-12 bg-gray-100" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-4">Nosso menu</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Menu Item -->
+                <div class="bg-white p-6 rounded shadow" data-aos="fade-right">
+                    <div class="border h-40 flex items-center justify-center">Imagem Do hambúrguer</div>
+                    <p>Descrição do hambúrguer</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow" data-aos="fade-right">
+                    <div class="border h-40 flex items-center justify-center">Imagem Do hambúrguer</div>
+                    <p>Descrição do hambúrguer</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow" data-aos="fade-right">
+                    <div class="border h-40 flex items-center justify-center">Imagem Do hambúrguer</div>
+                    <p>Descrição do hambúrguer</p>
+                </div>
+
+
+
+
+                <!-- Add more menu items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-4">Entre em contato</h3>
+            <form class="max-w-md mx-auto">
+                <div class="mb-4" data-aos="fade-right">
+                    <label for="name" class="block text-left mb-2">Nome</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4" data-aos="fade-right">
+                    <label for="email" class="block text-left mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4" data-aos="fade-right">
+                    <label for="message" class="block text-left mb-2">Message</label>
+                    <textarea id="message" class="w-full p-2 border border-gray-300 rounded" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit"
+                    class="px-6 py-2 bg-red-600 text-white font-bold rounded hover:bg-red-700">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Angel Santana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
