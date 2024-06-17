@@ -22,6 +22,9 @@ Clone o repositório e abra o arquivo `index.html` no seu navegador para visuali
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
 
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](./LICENSE).
 
 ## Autor
 
